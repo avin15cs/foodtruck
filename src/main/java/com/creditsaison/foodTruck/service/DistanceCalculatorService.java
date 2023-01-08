@@ -1,6 +1,6 @@
 package com.creditsaison.foodTruck.service;
 
-public class FoodTruckService {
+public class DistanceCalculatorService {
 
     public Double calculateDistance(Double lat1, Double lon1, Double lat2, Double lon2) {
         // Haversine formula
