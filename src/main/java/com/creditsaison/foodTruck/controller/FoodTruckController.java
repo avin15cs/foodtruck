@@ -4,11 +4,10 @@ import com.creditsaison.foodTruck.FoodTruck;
 import com.creditsaison.foodTruck.FoodTruckRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.creditsaison.foodTruck.service.DistanceCalculatorService;
 
 import java.util.Collections;
 import java.util.List;
-
-import com.creditsaison.foodTruck.service.DistanceCalculatorService;
 
 @RestController
 public class FoodTruckController {
@@ -34,7 +33,7 @@ public class FoodTruckController {
             return Collections.emptyList();
         }
     }
-    @PostMapping("/food-trucks")
+    @PostMapping("/food-truck")
     public FoodTruck addFoodTruck(@RequestBody FoodTruck foodTruck) {
         return foodTruckRepository.save(foodTruck);
     }
