@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class FoodTruck {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long objectid;
     private String applicant;
     private String facilityType;
